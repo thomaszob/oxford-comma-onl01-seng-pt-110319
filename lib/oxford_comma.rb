@@ -8,16 +8,16 @@ def oxford_comma(array)
     
   else
     finalString = "#{array[0]}"
-    counter = 2 
-    array.shift()
-    array.each{|fruit|
-      if counter < array.length
-        finalString << ", #{fruit}"
-      end
+    #counter = 1 
+    #array.shift()
+    #array.each{|fruit|
+    #  if counter < array.length
+    #   finalString << ", #{fruit}"
+    #  end
     
-    }
-    finalString << "and #{array[-1]}"
-    #finalString = array[0..-2].join(", ") + ", and " + array[-1]
+    #}
+    #finalString << "and #{array[-1]}"
+    finalString = array[0..-2].join(", ") + ", and " + array[-1]
   end
   finalString
 end
