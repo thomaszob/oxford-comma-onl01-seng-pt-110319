@@ -8,7 +8,7 @@ def oxford_comma(array)
     
   else
     finalString = "#{array[0]}"
-    counter = 1 
+    counter = 2 
     array.shift()
     array.each{|fruit|
       if counter < array.length
