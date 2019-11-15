@@ -16,7 +16,7 @@ def oxford_comma(array)
       end
     
     }
-    finalString << "and #{fruit}"
+    finalString << "and #{array[-1]}"
     #finalString = array[0..-2].join(", ") + ", and " + array[-1]
   end
   finalString
