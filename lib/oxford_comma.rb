@@ -9,6 +9,7 @@ def oxford_comma(array)
   else
     finalString = "#{array[0]}"
     counter = 1 
+    array.shift()
     array.each{|fruit|
       if counter < array.length
         finalString << ",#{fruit}"
