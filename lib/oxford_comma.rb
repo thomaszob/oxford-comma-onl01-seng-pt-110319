@@ -12,10 +12,11 @@ def oxford_comma(array)
     array.shift()
     array.each{|fruit|
       if counter < array.length
-        finalString << ",#{fruit}"
+        finalString << ", #{fruit}"
       end
-    finalString << "and #{fruit}"
+    
     }
+    finalString << "and #{fruit}"
     #finalString = array[0..-2].join(", ") + ", and " + array[-1]
   end
   finalString
