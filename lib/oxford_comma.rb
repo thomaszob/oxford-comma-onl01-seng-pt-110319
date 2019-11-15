@@ -7,13 +7,14 @@ def oxford_comma(array)
     finalString = "#{array[0]} and #{array[1]}"
     
   else
-    counter = 1 
-    array.each{|fruit|
-      if counter < array.length
-        finalString << ",#{fruit}"
-      end
+    #counter = 1 
+    #array.each{|fruit|
+    #  if counter < array.length
+    #    finalString << ",#{fruit}"
+    #  end
     #finalString << "and #{fruit}"
-    }
+    #}
+    finalString = array[0..-2].join(", ") + ", and " + array[-1]
   end
   finalString
 end
