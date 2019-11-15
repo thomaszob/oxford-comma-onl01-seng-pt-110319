@@ -3,8 +3,10 @@ def oxford_comma(array)
   if array.length == 1
     finalString = "#{array[0]}"
   
-  else 
+  elsif array.length == 2 
+    finalString = "#{array[0]} and #{array[1]}"
     
+  else
     counter = 1 
     array.each{|fruit|
       if counter < array.length
