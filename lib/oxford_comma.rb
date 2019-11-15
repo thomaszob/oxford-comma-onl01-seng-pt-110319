@@ -1,7 +1,7 @@
 def oxford_comma(array)
   finalString = ""
-  if array.length == 2 
-    finalString = "#{array[0]} and #{array[1]}"
+  if array.length == 1
+    finalString = "#{array[0]}"
   
   else 
     
